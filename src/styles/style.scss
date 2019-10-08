@@ -1,1 +1,19 @@
 @import 'modules/base';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.upper-part {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-img {
+    margin: 20px;
+}
