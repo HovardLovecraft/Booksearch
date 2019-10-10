@@ -13,31 +13,26 @@
 </head>
 
 <body>
-<!--
- Необходимо написать автоматический поиск по книгам с
-использованием приведенной ниже разметки.
- Поиск должен начинаться, если в поле поиска введено более трех
-символов.
- Окончание ввода текста нужно проверять задержкой в три секунды и
-только потом отправлять запрос на поиск.
- Для поиска нужно использовать URL
-https://www.googleapis.com/books/v1/volumes?q=search+terms, где
-search+terms - введенный пользователем текст
- Более подробная документация по API
-https://developers.google.com/books/docs/v1/using?#WorkingVolumes
- -->
- <!--
- Используйте эту разметку в вашем решении:
- -->
   <div class="book-search">
     <p>Input Search request</p>
     <input type="search" class="book-search-input">
-    
+    <div class="search-info"></div>
     <div class="book-search-result">
-
+      
     </div>
+    <button class="next-results" style="display: none">Next Results</button>
   </div>
   
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modal-content">
+     
+      <p>Some text in the Modal..</p>
+    </div>
+  
+  </div>
   <script defer src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 
 </body>
